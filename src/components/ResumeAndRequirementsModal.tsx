@@ -185,7 +185,7 @@ export const ResumeAndRequirementsModal: React.FC<ResumeModalProps> = ({ isOpen,
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-indigo-600 dark:text-indigo-400 hover:underline"
                     >
-                      linkedin.com/in/harshgauravdev
+                      linkedin.com/in/harshgaurav-dev
                       <ExternalLink className="w-3 h-3" />
                     </a>
                   </div>

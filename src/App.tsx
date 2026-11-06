@@ -561,7 +561,7 @@ export function App() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label="LinkedIn Profile"
-                          title="LinkedIn (in/harshgauravdev)"
+                          title="LinkedIn (in/harshgaurav-dev)"
                           className="p-2 text-white/90 hover:text-[#0B42D4] dark:hover:text-[#3B82F6] transition-colors"
                         >
                           <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">

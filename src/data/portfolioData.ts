@@ -74,7 +74,7 @@ export const PROFILE_DATA = {
   phone: '+91-7014145681',
   email: 'gharshry@gmail.com',
   github: 'https://github.com/hgroy',
-  linkedin: 'https://linkedin.com/in/harshgauravdev',
+  linkedin: 'https://www.linkedin.com/in/harshgaurav-dev/',
   resumePdfPath: '/assets/aistudio/Harsh_Gaurav_Resume_Clickable_b097138c.pdf',
   resumeImagePath: '/assets/certificates/resume.png',
   primaryPortraitPath: '/assets/profile/harsh-editorial-portrait.png',

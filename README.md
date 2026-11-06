@@ -3,7 +3,7 @@
 Official engineering portfolio of **Harsh Gaurav** — Full-Stack & Data Systems Engineer at **Code Garage Tech** (Ex-**GeeksforGeeks**), based in Mohali, Punjab, India.
 
 - **GitHub**: [@hgroy](https://github.com/hgroy)
-- **LinkedIn**: [in/harshgauravdev](https://linkedin.com/in/harshgauravdev)
+- **LinkedIn**: [in/harshgaurav-dev](https://www.linkedin.com/in/harshgaurav-dev/)
 - **Email**: harshgaurav646@gmail.com / gharshry@gmail.com
 
 ---
