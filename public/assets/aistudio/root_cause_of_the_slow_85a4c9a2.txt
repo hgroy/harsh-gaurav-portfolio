@@ -1,0 +1,14 @@
+root cause of the slow prod deploy (~43 min):
+We have no .dockerignore, so a leftover venv/ on the server gets copied into the image build. Two costs come from that:
+Copying it in → build context balloons to 2.34 GB (transfer + COPY ≈ 11 min).
+chown -R to make files app-accessible → we run the app as a non-root user, so we re-own /app to it — but it ends up crawling the venv's 100k+ junk files. This is the biggest single step (~15 min).
+And it all runs 4× (our 4 services rebuild the same identical image), with no cache.
+Fix:
+Add a .dockerignore to skip venv/ (+ .git, caches) → the venv never gets copied, so both the copy and the chown drop to seconds.
+Build one shared image for the 4 services instead of 4 identical ones.
+Keep the build cache (drop prune + --no-cache).
+
+
+
+
+hey analyze thi s file and make a doc for this in which mention 2-3 problems which we faced in the ad-genius side and then make how we solved pls analyze the things and then make a doc acordingly and do not worry about the link i will update the link 

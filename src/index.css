@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Outfit", "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+    background-color: #B4BED0;
+    color: #0F172A;
+  }
+
+  html.dark body {
+    background-color: #0E1526;
+    color: #F8FAFC;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.028em;
+  }
+}
+
+/* Unified Dribbble Periwinkle-Slate & Royal Cobalt Studio Surfaces */
+.studio-canvas {
+  background: linear-gradient(135deg, #BCC5D6 0%, #B4BED0 50%, #A9B5CB 100%);
+}
+
+.dark .studio-canvas {
+  background: linear-gradient(135deg, #0E1526 0%, #11192E 50%, #0A101F 100%);
+}
+
+.studio-section-alt {
+  background: linear-gradient(135deg, #B0BACD 0%, #A8B3C8 100%);
+}
+
+.dark .studio-section-alt {
+  background: linear-gradient(135deg, #0B1120 0%, #0E1628 100%);
+}
+
+.studio-card {
+  background-color: rgba(214, 222, 235, 0.72);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 16px 36px -8px rgba(15, 23, 42, 0.08);
+}
+
+.studio-card:hover {
+  background-color: rgba(224, 231, 242, 0.88);
+  border-color: rgba(11, 66, 212, 0.45);
+}
+
+.dark .studio-card {
+  background-color: rgba(20, 30, 52, 0.78);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.65);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.35);
+}
+
+.dark .studio-card:hover {
+  background-color: rgba(26, 38, 66, 0.92);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.studio-inset {
+  background-color: rgba(190, 200, 218, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.dark .studio-inset {
+  background-color: rgba(12, 19, 34, 0.75);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
